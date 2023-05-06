@@ -45,7 +45,7 @@ html {
   font-weight: 600;
   font-size: clamp(1.875rem, 1.548rem + 1.64vw, 3rem);
   line-height: 1.26;
-  text-transform: capitalize;
+  
   color: #ffffff;
 }
 
@@ -65,7 +65,7 @@ html {
   color: #fff;
   font-weight: 500;
   font-size: 24px;
-  text-transform: capitalize;
+  
   transition: background-color 0.2s;
 }
 @media (any-hover: hover) {
@@ -186,7 +186,7 @@ html {
 .menu__link {
   font-weight: 500;
   font-size: 20px;
-  text-transform: capitalize;
+  
   color: var(--text-color);
   text-decoration: none;
   transition: color 0.2s;
@@ -281,7 +281,7 @@ html {
   font-weight: 600;
   font-size: clamp(1.875rem, 1.184rem + 3.45vw, 4.25rem);
   line-height: 1.26;
-  text-transform: capitalize;
+  
 }
 .hero__text {
   margin-top: 18px;
@@ -343,7 +343,7 @@ html {
   border: none;
   font-weight: 500;
   font-size: 24px;
-  text-transform: capitalize;
+  
   color: #ffffff;
   padding: 10px;
 }
@@ -389,7 +389,7 @@ html {
   color: var(--bg-color);
   font-weight: 600;
   font-size: 18px;
-  text-transform: capitalize;
+  
 }
 .block-filter__dropdown {
   position: absolute;
@@ -415,7 +415,7 @@ html {
 .block-filter__item {
   padding: 10px;
   transition: background-color 0.2s;
-  text-transform: capitalize;
+  
   cursor: pointer;
 }
 @media (any-hover: hover) {
@@ -471,7 +471,7 @@ html {
   font-size: 26px;
   line-height: 1.26;
   letter-spacing: 0.01em;
-  text-transform: capitalize;
+  
 }
 .popular-slide__labels {
   display: flex;
@@ -556,7 +556,7 @@ html {
 .why__body {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-top: clamp(1.875rem, 1.33rem + 2.73vw, 3.75rem);
   gap: clamp(1.25rem, 0.705rem + 10vw, 3.125rem);
 }
@@ -599,7 +599,7 @@ html {
   font-weight: 600;
   font-size: 26px;
   letter-spacing: 0.01em;
-  text-transform: capitalize;
+  
 }
 .item-why__text {
   margin-top: 10px;
@@ -636,13 +636,13 @@ html {
   top: 0;
   left: 0;
   font-size: 260px;
-  text-transform: capitalize;
+  
   color: var(--accent-color);
 }
 .slider-reviews__text {
   font-size: clamp(1.25rem, 1.032rem + 1.09vw, 2rem);
   line-height: 1.57;
-  text-transform: capitalize;
+  
 }
 .slider-reviews__info {
   margin-top: 40px;
@@ -651,7 +651,7 @@ html {
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 0.01em;
-  text-transform: capitalize;
+  
 }
 .slider-reviews__buttons {
   height: 60px;
@@ -722,7 +722,7 @@ html {
   color: #fff;
   font-weight: 500;
   font-size: 24px;
-  text-transform: capitalize;
+  
   transition: background-color 0.2s;
   justify-content: center;
 }
@@ -818,12 +818,17 @@ input[type="tel"] {
     text-align: center;
   }
 }
-.begin__slogan {
+/* .begin__slogan {
   font-weight: 600;
   font-size: clamp(1.875rem, 1.184rem + 3.45vw, 4.25rem);
   line-height: 1.26;
-  text-transform: capitalize;
+  
+} */
+
+.begin__map {
+
 }
+
 .begin__content {
   flex: 0 0 50%;
 }
@@ -832,13 +837,13 @@ input[type="tel"] {
   font-weight: 600;
   font-size: clamp(1.8rem, 1.1rem + 3.2vw, 4rem);
   line-height: 1.26;
-  text-transform: capitalize;
+  
 }
 
 .begin__text {
   margin-top: 10px;
   font-weight: 500;
-  font-size: clamp(0.5rem, 0.4rem + 1.5vw, 2rem);
+  font-size: clamp(0.7rem, 0.5rem + 1.8vw, 2.2rem);
   line-height: 1.4;
 }
 
@@ -934,7 +939,7 @@ input[type="tel"] {
   font-weight: 600;
   font-size: 26px;
   letter-spacing: 0.01em;
-  text-transform: capitalize;
+  
   margin-bottom: 11px;
 }
 .links-footer__link {
