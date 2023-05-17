@@ -832,11 +832,13 @@ input[type="tel"] {
 } */
 
 .begin__map {
-
+  height: 400px;
+  width: 100%;
 }
 
 @media (max-width: 992px) {
   .begin__map {
+    height: 300px;
     width: 80%;
     flex-direction: column;
   }
@@ -844,14 +846,16 @@ input[type="tel"] {
 
 @media (max-width: 768px) {
   .begin__map {
-    width: 60%;
+    height: 250px;
+    width: 80%;
     flex-direction: column;
   }
 }
 
 @media (max-width: 600px) {
   .begin__map {
-    width: 40%;
+    height: 200px;
+    width: 80%;
     flex-direction: column;
   }
 }
