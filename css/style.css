@@ -860,7 +860,6 @@ input[type="tel"] {
   }
 }
 
-
 .begin__content {
   flex: 0 0 50%;
 }
@@ -877,6 +876,12 @@ input[type="tel"] {
   font-weight: 500;
   font-size: clamp(0.7rem, 0.5rem + 3.5vw, 2.2rem);
   line-height: 1.4;
+}
+
+.begin__number {
+  font-weight: 800;
+  font-size: clamp(0.7rem, 0.5rem + 5.5vw, 2.2rem);
+  color: #fff;
 }
 
 .begin__link {
