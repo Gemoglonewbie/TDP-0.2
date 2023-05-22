@@ -1304,10 +1304,11 @@
 							<input type="email" id="email" name="email" required>
 							<br>
 							<label for="phone">Телефон:</label>
-							<input type="tel" id="phone" name="phone" required>
+							<input type="tel" id="phone" name="phone" pattern="[0-9]+" required>
+							<button class="gallery__btn" id="submitBtn" type="button">Оставить заявку</button>
 						  </form>
 					</div>
-					<a href="" class="gallery__link link">Оставить заявку</a>
+					
 				</div>
 			</div>
 		</section>
@@ -1399,6 +1400,14 @@
 			</div>
 		</div>
 	</footer>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+		  <span class="close">&times;</span>
+		  <h2>Заголовок модального окна</h2>
+		  <p>Текст сообщения модального окна.</p>
+		  <p>Вы можете настроить содержимое модального окна по своему усмотрению.</p>
+		</div>
+	  </div>
 </body>
 
 </html>

@@ -119,3 +119,31 @@ if (galleryItems.length > 0) {
 		})
 	})
 }
+
+//---Modal
+
+ // Получаем модальное окно
+ let modal = document.getElementById("myModal");
+
+ // Получаем кнопку, открывающую модальное окно
+ let btn = document.getElementById("submitBtn");
+
+ // Получаем элемент <span>, который используется для закрытия модального окна
+ let span = document.getElementsByClassName("close")[0];
+
+ // Когда пользователь нажимает кнопку, открывается модальное окно
+ btn.addEventListener("click", function() {
+   modal.style.display = "block";
+ });
+
+ // Когда пользователь нажимает на <span> (x), закрывается модальное окно
+ span.addEventListener("click", function() {
+   modal.style.display = "none";
+ });
+
+ // Когда пользователь щелкает вне модального окна, оно закрывается
+ window.addEventListener("click", function(event) {
+   if (event.target == modal) {
+	 modal.style.display = "none";
+   }
+ });

@@ -45,7 +45,7 @@ html {
   font-weight: 600;
   font-size: clamp(1.875rem, 1.548rem + 1.64vw, 3rem);
   line-height: 1.26;
-  
+  text-align: center;
   color: #ffffff;
 }
 
@@ -728,10 +728,24 @@ html {
   color: #fff;
   font-weight: 500;
   font-size: 24px;
-  
   transition: background-color 0.2s;
   justify-content: center;
 }
+
+.gallery__btn{
+  display: flex;
+  margin-top: 45px;
+  padding: 22px 42px;
+  background-color: var(--accent-color);
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  transition: background-color 0.2s;
+  justify-content: center;
+}
+
+
 
 .gallery__item {
   flex: 0 0 47%;
@@ -764,6 +778,8 @@ form {
   max-width: 500px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
