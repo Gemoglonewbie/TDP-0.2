@@ -151,7 +151,7 @@ const formInpts = [
 
 formInpts.forEach(function(inp) {
 	inp.el.addEventListener('focus', function() {
-		inp.el.style.border = 'none';
+		inp.el.style.border = '2px solid #ccc';
 	})
 })
 

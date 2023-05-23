@@ -743,6 +743,7 @@ html {
   font-size: 24px;
   transition: background-color 0.2s;
   justify-content: center;
+  cursor: pointer;
 }
 
 
@@ -1078,17 +1079,23 @@ input[type="tel"] {
   z-index: 102;
   position: relative;
   cursor: default;
-  padding: 15px;
+  padding: 30px;
   border: 2px solid #fff;
   background-color: #fff;
   max-width: 90%;
   color: #000;
+  border-radius: 5px;
+  border-color: #ccc;
 }
 
 .modal__close {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  right: 3px;
+  top: 3px;
+  border-radius: 5px;
 }
 
 .modal--open {
