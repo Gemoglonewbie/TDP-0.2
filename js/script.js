@@ -120,30 +120,56 @@ if (galleryItems.length > 0) {
 	})
 }
 
-//---Modal
 
- // Получаем модальное окно
- let modal = document.getElementById("myModal");
+const formModal = new Modal(
+    document.querySelector('#form_modal'),
+);
 
- // Получаем кнопку, открывающую модальное окно
- let btn = document.getElementById("submitBtn");
 
- // Получаем элемент <span>, который используется для закрытия модального окна
- let span = document.getElementsByClassName("close")[0];
+const submitFormBtn = document.querySelector('#submitBtn');
+const nameInput = document.querySelector('#name');
+const nameReg = /.?/;
+const emailInput = document.querySelector('#email');
+const emailReg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const phoneInput = document.querySelector('#phone');
+const phoneReg = /^(\+|[0-9])[0-9]{4,}/;
 
- // Когда пользователь нажимает кнопку, открывается модальное окно
- btn.addEventListener("click", function() {
-   modal.style.display = "block";
- });
+const formInpts = [
+	 {
+		el: document.querySelector('#name'),
+		reg: /.+/,
+	},
+	{
+		el: document.querySelector('#email'),
+		reg: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+	},
+	{
+		el: document.querySelector('#phone'),
+		reg: /^(\+|[0-9])[0-9]{4,}/,
+	},
+];
 
- // Когда пользователь нажимает на <span> (x), закрывается модальное окно
- span.addEventListener("click", function() {
-   modal.style.display = "none";
- });
+formInpts.forEach(function(inp) {
+	inp.el.addEventListener('focus', function() {
+		inp.el.style.border = 'none';
+	})
+})
 
- // Когда пользователь щелкает вне модального окна, оно закрывается
- window.addEventListener("click", function(event) {
-   if (event.target == modal) {
-	 modal.style.display = "none";
-   }
- });
+function validateForm() {
+	let valid = true;
+	formInpts.forEach(inp => {
+		const val = inp.el.value;
+		if (!inp.reg.test(val)) {
+			inp.el.style.border = '2px solid red';
+			valid = false;
+		}
+	});
+	return valid;
+}
+
+submitFormBtn.addEventListener('click', function(e) {
+	console.log('clickclack');
+	if (validateForm()) {
+		formModal.open(e);
+	}
+})
